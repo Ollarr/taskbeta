@@ -10,16 +10,19 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: tbBGColor,
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const Icon(
               Icons.menu,
               color: tbBlack,
               size: 30,
             ),
-            Container(
-              height: 40,
-              width: 40,
-              child: Image.asset("assets/images/profile-pic.jpeg"),
+            ClipOval(
+              child: SizedBox(
+                height: 40,
+                width: 40,
+                child: Image.asset("assets/images/Profile-pic.jpeg"),
+              ),
             )
           ],
         ),
